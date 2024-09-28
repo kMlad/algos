@@ -3,7 +3,7 @@ export function canPlaceFlowers(flowerbed: number[], n: number): boolean {
     return false;
   }
   if (flowerbed.length === 1) {
-    if (flowerbed[0] === 0 && n < 1) {
+    if (flowerbed[0] === 0 && n <= 1) {
       return true;
     }
     if (flowerbed[0] === 1) {
